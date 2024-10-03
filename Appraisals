@@ -3,7 +3,7 @@ appraise "activerecord_7_0" do
   gem "activesupport", "~> 7.0.0"
   gem "pg", "~> 1.1"
   gem "mysql2"
-  gem "sqlite3"
+  gem "sqlite3", "~> 1.4"
 end
 
 
