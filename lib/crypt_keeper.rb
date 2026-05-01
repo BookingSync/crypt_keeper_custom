@@ -19,7 +19,7 @@ module CryptKeeper
     alias_method :silence_logs?, :silence_logs
 
     def active_record_7_1?
-      ActiveRecord::VERSION::MAJOR >= 7 && ActiveRecord::VERSION::MINOR >= 1
+      Gem::Version.new(ActiveRecord::VERSION::STRING) >= Gem::Version.new("7.1")
     end
   end
 end
